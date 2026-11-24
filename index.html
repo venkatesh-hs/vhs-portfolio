@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Venkatesh H S | Software Engineer</title>
+  <meta name="description" content="Venkatesh Hanumanthappa Shivakumar - Software Engineer with 5.5 years of experience in Java, Python, Spring Boot, microservices, and LLM/RAG systems.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">Venkatesh H S</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow">Software Engineer &middot; IBM India Software Labs</p>
+      <h1>Venkatesh Hanumanthappa Shivakumar</h1>
+      <p class="lead">I build backend systems and AI-powered features in Java and Python, from enterprise microservices to LLM and RAG pipelines.</p>
+      <p class="location">Bengaluru, India &rarr; relocating to New Zealand (Partnership-Based Open Work Visa)</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="https://www.linkedin.com/in/venkatesh-h-s-962844184/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/venkatesh-hs" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="Venkatesh_HS_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>About</h2>
+      <p>I am a software engineer with 5.5 years of experience building robust applications in Java, Python, and C++. I have hands-on experience with large language models, prompt engineering, text-generation parameter tuning, and the Hugging Face ecosystem, and I design and implement Retrieval-Augmented Generation (RAG) systems.</p>
+      <p>I enjoy working in teams, exceeding goals, and experimenting with emerging technologies through personal projects.</p>
+      <ul class="stats">
+        <li><strong>5.5 yrs</strong><span>Software engineering</span></li>
+        <li><strong>IBM</strong><span>watsonx &amp; SPSS Modeler</span></li>
+        <li><strong>Award</strong><span>IBM Outstanding Technical Achievement</span></li>
+      </ul>
+    </section>
+
+    <section id="experience" class="container">
+      <h2>Experience</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Software Engineer &mdash; IBM India Software Labs</h3>
+          <span class="date">Apr 2024 &ndash; Present</span>
+        </div>
+
+        <h4>watsonx Orchestrate (Controls)</h4>
+        <p>Backend developer in the Controls team of IBM watsonx Orchestrate, IBM's enterprise AI agent orchestration platform.</p>
+        <ul>
+          <li>Resolved production defects in the Controls backend, diagnosing and fixing customer-reported issues.</li>
+          <li>Worked on AI-assisted custom controls: alongside out-of-the-box controls (PII, content guardrails), users can describe a control in the AI chat and have it created for them.</li>
+          <li>Contributed to the Control Plane agent workflow, where an LLM interprets the request using skills files, generates a Python tool, and calls backend APIs that create the Python toolkit.</li>
+          <li>Supported the final step of the flow, where the control is attached to the chosen agent through the binding API.</li>
+        </ul>
+
+        <h4>Unstructured Synthetic Data Generation (USDG) Runtime</h4>
+        <p>Contributed to IBM's USDG Runtime, a component of the IBM watsonx platform used to create large, high-quality unstructured text datasets for tuning and evaluating foundation models.</p>
+        <ul>
+          <li>Worked on the runtime implementation of unstructured data pipelines (tool-calling, NL2SQL, Knowledge).</li>
+          <li>Designed multi-layer prompt engineering for a production SDG system, including ICL shot construction, model-aware token routing, and LLM-as-a-Judge faithfulness scoring.</li>
+          <li>Reviewed the Janes API specification and contributed to product documentation and feature validation.</li>
+          <li>Helped train the defence model using granite.build.</li>
+        </ul>
+        <p class="impact"><strong>Impact:</strong> USDG was used by an internal IBM team building a defence model for Janes. Thousands of synthetic datasets were generated and the project was a success. I received IBM's Outstanding Technical Achievement Award.</p>
+
+        <h4>AI-Infusion for SPSS Modeler</h4>
+        <p>Backend orchestration layer that takes natural language queries from the SPSS Modeler canvas UI, enriches them with structured prompts and RAG context from Milvus/pgvector, and routes them through IBM BOB to an LLM for SPSS script generation.</p>
+        <ul>
+          <li>Engineered structured prompt instructions (instruction hierarchy, output constraints) for accurate, syntactically valid script generation.</li>
+          <li>Architected the RAG pipeline with Milvus and pgvector for query-relevant context retrieval.</li>
+          <li>Implemented the orchestration controller handling request intake, context enrichment, and LLM delegation.</li>
+        </ul>
+
+        <h4>SPSS Modeler &ndash; Backend Development</h4>
+        <ul>
+          <li>Resolved production customer issues in the SPSS runtime and database integration layers.</li>
+          <li>Implemented connector features: key-pair authentication for Snowflake and query banding for Teradata.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Software Engineer / Junior Software Engineer &mdash; Netcracker Technology</h3>
+          <span class="date">Nov 2020 &ndash; Apr 2024</span>
+        </div>
+        <ul>
+          <li>Worked with the Solutions delivery team, collaborating with business analysts on requirements and implementing Java APIs.</li>
+          <li>Built user-friendly interfaces, integrated Java APIs, and implemented server-side functionality using design patterns and coding best practices.</li>
+          <li>Worked with QA to validate code and debug issues, and with cross-functional teams on requirements and architecture.</li>
+          <li>On the CRM solution delivery team, implemented the SIM Portability feature, including a portability document generation service and a digital signature service for the generated documents.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Book Inventory (E-commerce)</h3>
+          <p>An e-commerce platform for books. Users register, log in, browse the inventory, and add or remove books from their cart. A separate Angular client talks to a Spring Boot backend over HTTP, secured with JWT authentication using Spring Security.</p>
+          <p class="tags">Angular &middot; TypeScript &middot; Spring Boot &middot; Spring Security &middot; Spring JPA &middot; JWT</p>
+          <p class="links">
+            <a href="https://github.com/venkatesh-hs/E-Commerce-Client" target="_blank" rel="noopener">Frontend</a>
+            <a href="https://github.com/venkatesh-hs/E-Commerce" target="_blank" rel="noopener">Backend</a>
+            <a href="https://github.com/venkatesh-hs/Ecommerce-Microservices" target="_blank" rel="noopener">Microservices (in progress)</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Weather App</h3>
+          <p>A Spring Boot application with a Thymeleaf view layer that fetches weather details for a geographical location using the OpenWeatherMap public API.</p>
+          <p class="tags">Spring Boot &middot; Thymeleaf &middot; REST API</p>
+          <p class="links">
+            <a href="https://github.com/venkatesh-hs/Weather-App/tree/master" target="_blank" rel="noopener">Source</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Languages</h3>
+          <p class="chips"><span>Java</span><span>Python</span><span>C++</span></p>
+        </div>
+        <div class="card">
+          <h3>Frameworks</h3>
+          <p class="chips"><span>Spring Framework</span><span>Spring Boot</span><span>Spring Security</span></p>
+        </div>
+        <div class="card">
+          <h3>Architecture</h3>
+          <p class="chips"><span>Microservices</span><span>RESTful APIs</span><span>Design Patterns</span></p>
+        </div>
+        <div class="card">
+          <h3>AI / LLM</h3>
+          <p class="chips"><span>Prompt Engineering</span><span>RAG</span><span>Hugging Face</span><span>HF Chat Templates</span><span>Text Generation</span><span>Milvus</span><span>pgvector</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="container">
+      <h2>Education &amp; Certification</h2>
+      <article class="card">
+        <div class="card-head">
+          <h3>B.E. Computer Science &mdash; The National Institute of Engineering, Mysuru</h3>
+          <span class="date">2016 &ndash; 2020</span>
+        </div>
+        <p>CGPA: 9/10</p>
+      </article>
+      <article class="card">
+        <h3>Spring Boot Microservices and Spring Cloud. Build &amp; Deploy (Udemy)</h3>
+        <p class="links"><a href="https://www.udemy.com/certificate/UC-610c7a66-0590-4041-a6ec-7fccf4d068ab/" target="_blank" rel="noopener">View certificate</a></p>
+      </article>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <p>I'm open to opportunities in New Zealand. Feel free to reach out.</p>
+      <p class="links">
+        <a href="mailto:hsvenkatesh10@gmail.com">hsvenkatesh10@gmail.com</a>
+        <a href="https://www.linkedin.com/in/venkatesh-h-s-962844184/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/venkatesh-hs" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>&copy; 2026 Venkatesh Hanumanthappa Shivakumar</p>
+  </footer>
+</body>
+</html>
